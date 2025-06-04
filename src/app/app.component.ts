@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { AuthService } from './services/auth.service';
+import { HeaderComponent } from './components/shared/header/header.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CommonModule, RouterModule,HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'demo';
+  constructor(public auth: AuthService) {}
+
+  logout() {
+    this.auth.logout();
+  }
+
+  get user() {
+    return this.auth.getUser();
+  }
 }
