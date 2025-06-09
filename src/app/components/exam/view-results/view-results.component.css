@@ -1,0 +1,44 @@
+.container {
+  max-width: 600px;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 1.5rem;
+}
+
+.result-display {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.score-display {
+  font-size: 1.8rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.percentage-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.result-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

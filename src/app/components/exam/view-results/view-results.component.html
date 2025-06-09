@@ -1,0 +1,50 @@
+<div class="container mt-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h2 class="text-center mb-0">Your Exam Result</h2>
+    </div>
+
+    <div class="card-body">
+      @if (errorMessage) {
+        <div class="alert alert-danger mt-3">
+          {{ errorMessage }}
+        </div>
+      }
+
+      @if (!errorMessage) {
+        <div class="text-center">
+          <div class="result-display mb-4">
+            <h3 class="score-display">Score: {{ score }}/{{ total }}</h3>
+            <h4 class="percentage-display" [class.text-success]="percentage >= 50" [class.text-danger]="percentage < 50">
+              Percentage: {{ percentage }}%
+            </h4>
+          </div>
+
+          <div class="result-visual mt-4">
+            @if (percentage >= 50) {
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
+                alt="Good Result"
+                class="result-image"
+              />
+              <p class="text-success mt-2">Great job! You passed!</p>
+            } @else {
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png"
+                alt="Bad Result"
+                class="result-image"
+              />
+              <p class="text-danger mt-2">Keep trying! You can do better!</p>
+            }
+          </div>
+
+          <div class="mt-5">
+            <button class="btn btn-primary px-4 py-2" (click)="goBack()">
+              Back to Exam List
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  @if (isLoading) {
+    <div class="text-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p>Loading questions...</p>
+    </div>
+  } @else if (errorMessage) {
+    <div class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  } @else {
+    <form (ngSubmit)="submitExam()" class="exam-form">      @for (q of questions; track q.id) {
+        <div class="card mb-4 question-card">
+          <div class="card-body">
+            <h5 class="card-title">{{ q.question }}</h5>
+            <div class="options-list">
+              @for (option of q.options; track option) {
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    [id]="'q' + q.id + option"
+                    name="q{{ q.id }}"
+                    [value]="option"
+                    [(ngModel)]="answers[q.id]"
+                    required
+                  >
+                  <label class="form-check-label" [for]="'q' + q.id + option">
+                    {{ option }}
+                  </label>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      }
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg">
+          Submit Exam
+        </button>
+      </div>
+    </form>
+  }
+</div>

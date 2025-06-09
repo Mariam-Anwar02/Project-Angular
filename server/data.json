@@ -9,7 +9,7 @@
     },
     {
       "id": "2",
-      "name": "Mona Hassan",
+      "name": "Mona",
       "email": "admin@gmail.com",
       "password": "admin123",
       "role": "admin"
@@ -20,6 +20,200 @@
       "email": "marwa@gmail.com",
       "password": "123456",
       "role": "student"
-    } 
+    },
+    {
+      "id": "6df6",
+      "name": "Eyad",
+      "email": "eyad@gmail.com",
+      "password": "123456",
+      "role": "student"
+    }
+  ],
+  "exams": [
+    {
+      "id": "1",
+      "title": "Math Exam",
+      "description": "This exam covers algebra, geometry, and calculus topics in depth..."
+    },
+    {
+      "id": "2",
+      "title": "Science Exam",
+      "description": "Covers physics, chemistry, and biology basics for high school level."
+    },
+    {
+      "id": "3",
+      "title": "History Exam",
+      "description": "Test your knowledge of world history, important dates, and events."
+    },
+    {
+      "id": "4",
+      "title": "English Language Exam",
+      "description": "Grammar, vocabulary, and reading comprehension questions."
+    },
+    {
+      "id": "5",
+      "title": "Computer Science Exam",
+      "description": "Basics of programming, algorithms, and data structures."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "examId": 1,
+      "question": "What is 2 + 2?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "4"
+    },
+    {
+      "id": "3",
+      "examId": 1,
+      "question": "What is the derivative of x²?",
+      "options": [
+        "x",
+        "2x",
+        "x²",
+        "2"
+      ],
+      "answer": "2x"
+    },
+    {
+      "id": "4",
+      "examId": 2,
+      "question": "What planet is known as the Red Planet?",
+      "options": [
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Venus"
+      ],
+      "answer": "Mars"
+    },
+    {
+      "id": "5",
+      "examId": 2,
+      "question": "What is H2O commonly known as?",
+      "options": [
+        "Salt",
+        "Oxygen",
+        "Water",
+        "Hydrogen"
+      ],
+      "answer": "Water"
+    },
+    {
+      "id": "6",
+      "examId": 2,
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "answer": "Carbon Dioxide"
+    },
+    {
+      "id": "7",
+      "examId": 3,
+      "question": "Who was the first President of the United States?",
+      "options": [
+        "George Washington",
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "John Adams"
+      ],
+      "answer": "George Washington"
+    },
+    {
+      "id": "8",
+      "examId": 3,
+      "question": "In which year did World War II end?",
+      "options": [
+        "1945",
+        "1939",
+        "1918",
+        "1950"
+      ],
+      "answer": "1945"
+    },
+    {
+      "id": "9",
+      "examId": 4,
+      "question": "Choose the correct form of the verb: She ____ to school every day.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "gone"
+      ],
+      "answer": "goes"
+    },
+    {
+      "id": "10",
+      "examId": 4,
+      "question": "What is the synonym of 'happy'?",
+      "options": [
+        "Sad",
+        "Joyful",
+        "Angry",
+        "Tired"
+      ],
+      "answer": "Joyful"
+    },
+    {
+      "id": "11",
+      "examId": 5,
+      "question": "Which data structure uses FIFO (First In First Out)?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": "Queue"
+    },
+    {
+      "id": "12",
+      "examId": 5,
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Trainer Marking Language",
+        "Hyper Text Markup Language",
+        "Hyper Text Marketing Language",
+        "Hyper Text Markup Leveler"
+      ],
+      "answer": "Hyper Text Markup Language"
+    }
+  ],
+  "results": [
+    {
+      "id": 1749466039037,
+      "userId": "1",
+      "examId": "1",
+      "score": 100,
+      "total": 2,
+      "date": "2025-06-09T10:47:19.037Z"
+    },
+    {
+      "id": 1749467033704,
+      "userId": "6df6",
+      "examId": "1",
+      "score": 0,
+      "total": 2,
+      "date": "2025-06-09T11:03:53.704Z"
+    },
+    {
+      "id": 1749468419400,
+      "userId": "6df6",
+      "examId": "2",
+      "score": 100,
+      "total": 3,
+      "date": "2025-06-09T11:26:59.401Z"
+    }
   ]
 }
