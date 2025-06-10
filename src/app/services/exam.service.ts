@@ -26,4 +26,31 @@ export class ExamService {
   getResultsByUser(userId: string) {
     return this.http.get<any[]>(`${this.baseUrl}/results?userId=${userId}`);
   }
+  getExamById(id: string): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/exams/${id}`);
+  }
+
+  createExam(exam: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}/exams`, exam);
+  }
+
+  updateExam(exam: any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/exams/${exam.id}`, exam);
+  }
+
+  deleteExam(id: string): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/exams/${id}`);
+  }
+  createQuestion(question: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}/questions`, question);
+  }
+
+  updateQuestion(question: any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/questions/${question.id}`, question);
+  }
+
+  deleteQuestion(id: string): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/questions/${id}`);
+  }
+
 }

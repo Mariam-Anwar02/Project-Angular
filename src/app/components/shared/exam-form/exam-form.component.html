@@ -1,0 +1,24 @@
+<div class="container mt-4">
+  <h2>{{ isEdit ? 'Edit Exam' : 'Create Exam' }}</h2>
+  <form [formGroup]="examForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input id="title" formControlName="title" class="form-control" />
+      <div *ngIf="examForm.get('title')?.invalid && examForm.get('title')?.touched" class="text-danger">
+        Title is required and must be at least 3 characters.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea id="description" formControlName="description" rows="5" class="form-control"></textarea>
+      <div *ngIf="examForm.get('description')?.invalid && examForm.get('description')?.touched" class="text-danger">
+        Description is required and must be at least 10 characters.
+      </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit" [disabled]="examForm.invalid || isLoading">
+      {{ isEdit ? 'Update Exam' : 'Create Exam' }}
+    </button>
+  </form>
+</div>
