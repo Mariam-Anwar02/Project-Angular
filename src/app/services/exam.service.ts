@@ -41,6 +41,7 @@ export class ExamService {
   deleteExam(id: string): Observable<any> {
     return this.http.delete(`${this.baseUrl}/exams/${id}`);
   }
+
   createQuestion(question: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/questions`, question);
   }
@@ -52,5 +53,12 @@ export class ExamService {
   deleteQuestion(id: string): Observable<any> {
     return this.http.delete(`${this.baseUrl}/questions/${id}`);
   }
+  getAllResults(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.baseUrl}/results`);
+  }
+  getResultsByExam(examId: number) {
+    return this.http.get<any[]>(`${this.baseUrl}/results?examId=${examId}`);
+  }
+  
 
 }

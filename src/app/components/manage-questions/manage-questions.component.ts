@@ -23,13 +23,16 @@ export class ManageQuestionsComponent implements OnInit {
     options: ['', '', '', ''],
     answer: ''
   };
+formRef: any;
 
   constructor(private route: ActivatedRoute, private examService: ExamService) {}
 
   ngOnInit(): void {
     this.examId = +this.route.snapshot.paramMap.get('examId')!;
+    console.log('Exam ID:', this.examId);  // 👈 Add this
     this.loadQuestions();
   }
+
 
   loadQuestions(): void {
     this.examService.getQuestions(this.examId).subscribe(data => this.questions = data);

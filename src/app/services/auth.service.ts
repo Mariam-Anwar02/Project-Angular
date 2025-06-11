@@ -18,7 +18,7 @@ export class AuthService {
 
   setUser(user: User): void {
     this.currentUser = user;
-    localStorage.setItem('user', JSON.stringify(user)); 
+    localStorage.setItem('user', JSON.stringify(user));
   }
 
   getUser(): User | null {
@@ -42,5 +42,8 @@ export class AuthService {
   register(name: string, email: string, password: string, role: string) {
     const newUser = { name, email, password, role };
     return this.http.post(this.baseUrl, newUser);
+  }
+  getUsers() {
+    return this.http.get<any[]>(this.baseUrl);
   }
 }

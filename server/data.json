@@ -195,40 +195,16 @@
       "answer": "Hyper Text Markup Language"
     },
     {
-      "id": "f83a",
-      "examId": 3,
-      "question": "xsxs",
+      "id": "f4af",
+      "examId": 1749604756227,
+      "question": "asdf",
       "options": [
-        "mqqnq",
-        "g",
-        "",
-        "q"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "answer": "q"
-    },
-    {
-      "id": "0f39",
-      "examId": 3,
-      "question": "",
-      "options": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer": ""
-    },
-    {
-      "id": "7b3a",
-      "examId": 1,
-      "question": "",
-      "options": [
-        "c",
-        "f",
-        "fc",
-        "fcv"
-      ],
-      "answer": ""
+      "answer": "A"
     }
   ],
   "results": [
@@ -255,6 +231,14 @@
       "score": 100,
       "total": 3,
       "date": "2025-06-09T11:26:59.401Z"
+    },
+    {
+      "id": 1749639967772,
+      "userId": "1",
+      "examId": "5",
+      "score": 50,
+      "total": 2,
+      "date": "2025-06-11T11:06:07.772Z"
     }
   ]
 }

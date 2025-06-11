@@ -7,7 +7,7 @@ import { TakeExamComponent } from './components/exam/take-exam/take-exam.compone
 import { ViewResultComponent } from './components/exam/view-results/view-results.component';
 import { ExamFormComponent } from './components/shared/exam-form/exam-form.component';
 import {ManageQuestionsComponent} from './components/manage-questions/manage-questions.component';
-import {AdminResultsComponent} from './components/admin-results/admin-results.component';
+import {AdminViewResultsComponent} from './components/admin-view-results/admin-view-results.component';
 export const routes: Routes = [
 { path: '', redirectTo: 'login', pathMatch: 'full' },
 { path: 'login', component: LoginComponent },
@@ -19,8 +19,5 @@ export const routes: Routes = [
 {path: 'admin-dashboard/edit-exam/:id',component: ExamFormComponent},
 {path: 'admin-dashboard/create-exam',component: ExamFormComponent},
 { path: 'admin-dashboard/manage-questions/:examId', component: ManageQuestionsComponent },
-
-{ path: 'admin-dashboard/results', component: AdminResultsComponent }
-
-
+{path: 'admin-dashboard/results',component: AdminViewResultsComponent}
 ]
