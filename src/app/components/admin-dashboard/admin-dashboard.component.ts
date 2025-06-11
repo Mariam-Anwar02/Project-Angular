@@ -3,9 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { ExamService } from '../../services/exam.service';
 import { Router } from '@angular/router';
 
+import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-admin-dashboard',
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './admin-dashboard.component.html',
   styleUrl: './admin-dashboard.component.css'
 })
@@ -35,4 +37,7 @@ export class AdminDashboardComponent implements OnInit {
     addExam(): void {
       this.router.navigate(['admin-dashboard/create-exam']);
     }
+    manageQuestions(id: string): void {
+  this.router.navigate(['/admin-dashboard/manage-questions', id]);
+}
   }

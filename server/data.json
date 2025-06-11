@@ -41,9 +41,9 @@
       "description": "Covers physics, chemistry, and biology basics for high school level."
     },
     {
-      "id": "3",
       "title": "History Exam",
-      "description": "Test your knowledge of world history, important dates, and events."
+      "description": "Test your knowledge of world history, important dates, and events.",
+      "id": "3"
     },
     {
       "id": "4",
@@ -54,6 +54,11 @@
       "id": "5",
       "title": "Computer Science Exam",
       "description": "Basics of programming, algorithms, and data structures."
+    },
+    {
+      "id": "1749604756227",
+      "title": "managment",
+      "description": "manage human resourse and capital"
     }
   ],
   "questions": [
@@ -188,6 +193,42 @@
         "Hyper Text Markup Leveler"
       ],
       "answer": "Hyper Text Markup Language"
+    },
+    {
+      "id": "f83a",
+      "examId": 3,
+      "question": "xsxs",
+      "options": [
+        "mqqnq",
+        "g",
+        "",
+        "q"
+      ],
+      "answer": "q"
+    },
+    {
+      "id": "0f39",
+      "examId": 3,
+      "question": "",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": ""
+    },
+    {
+      "id": "7b3a",
+      "examId": 1,
+      "question": "",
+      "options": [
+        "c",
+        "f",
+        "fc",
+        "fcv"
+      ],
+      "answer": ""
     }
   ],
   "results": [
