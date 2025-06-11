@@ -56,9 +56,9 @@
       "description": "Basics of programming, algorithms, and data structures."
     },
     {
-      "id": "1749604756227",
       "title": "managment",
-      "description": "manage human resourse and capital"
+      "description": "manage human resource and capital",
+      "id": "1749604756227"
     }
   ],
   "questions": [
@@ -233,12 +233,20 @@
       "date": "2025-06-09T11:26:59.401Z"
     },
     {
-      "id": 1749639967772,
+      "id": 1749655030345,
       "userId": "1",
       "examId": "5",
-      "score": 50,
+      "score": 100,
       "total": 2,
-      "date": "2025-06-11T11:06:07.772Z"
+      "date": "2025-06-11T15:17:10.345Z"
+    },
+    {
+      "id": 1749655405010,
+      "userId": "1",
+      "examId": "1749604756227",
+      "score": 100,
+      "total": 2,
+      "date": "2025-06-11T15:23:25.010Z"
     }
   ]
 }
